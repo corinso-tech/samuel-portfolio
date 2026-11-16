@@ -7,6 +7,7 @@ import { Close, Download, Menu, Moon, Sun } from "./Icons";
 
 const links = [
   { id: "about", label: "About" },
+  { id: "services", label: "Services" },
   { id: "work", label: "Work" },
   { id: "experience", label: "Experience" },
   { id: "stack", label: "Stack" },

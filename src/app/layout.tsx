@@ -9,13 +9,13 @@ const jetbrains = JetBrains_Mono({ variable: "--font-jetbrains", subsets: ["lati
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 const description =
-  "Samuel Uzoma is a Flutter mobile and web engineer in Lagos, Nigeria, building production apps for transport, logistics, payments and learning.";
+  "Samuel Uzoma is a mobile and full-stack engineer in Lagos, Nigeria, building Flutter apps, Next.js websites and NestJS backends for transport, logistics, payments and learning.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: { default: `${profile.name} · ${profile.role}`, template: `%s · ${profile.name}` },
   description,
-  keywords: ["Samuel Uzoma", "Flutter developer", "Flutter engineer", "Lagos", "Nigeria", "mobile developer", "Dart", "Paystack", "LMS"],
+  keywords: ["Samuel Uzoma", "Flutter developer", "full-stack developer", "Next.js developer", "NestJS", "TypeScript", "PostgreSQL", "Lagos", "Nigeria", "mobile developer", "Dart", "Paystack", "LMS"],
   authors: [{ name: profile.fullName }],
   alternates: { canonical: "/" },
   openGraph: {

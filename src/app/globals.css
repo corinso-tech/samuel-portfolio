@@ -283,3 +283,15 @@ img { max-width: 100%; }
 
 .footer { padding-block: 40px 56px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted); }
 .footer a { color: var(--muted); }
+
+/* What I build */
+.services { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+@media (max-width: 1020px) { .services { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 560px) { .services { grid-template-columns: 1fr; } }
+.service { position: relative; padding: 26px; border-radius: 22px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 12px; align-content: start; transition: border-color .3s, box-shadow .3s; }
+.service:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); box-shadow: var(--shadow); }
+.service-icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); }
+.service-icon svg { width: 24px; height: 24px; }
+.service h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.02em; margin-top: 6px; }
+.service p { margin: 0; color: var(--muted); font-size: 15px; }
+.service .tags { margin-top: 4px; }

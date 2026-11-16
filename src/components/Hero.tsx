@@ -87,8 +87,8 @@ export default function Hero() {
           <motion.div className="hero-role" {...fade(0.45)}>{profile.role}</motion.div>
 
           <motion.p className="hero-sub" {...fade(0.55)}>
-            I build and ship Flutter apps that move <RotatingWord words={profile.movers} />{" "}
-            for real users on iOS, Android and the web.
+            I build mobile apps, web apps and the backends behind them, software that moves <RotatingWord words={profile.movers} />{" "}
+            for real users.
           </motion.p>
 
           <motion.div className="hero-cta" {...fade(0.65)}>
@@ -98,7 +98,7 @@ export default function Hero() {
 
           <motion.div className="hero-meta" {...fade(0.75)}>
             <span><Pin /> {profile.location}</span>
-            <span>Flutter since 2021</span>
+            <span>Flutter · Next.js · NestJS</span>
             <span>Shipping to production since 2023</span>
           </motion.div>
         </div>
@@ -118,7 +118,7 @@ export default function Hero() {
           </motion.div>
 
           {[
-            { cls: "chip-a", icon: "{ }", title: "Flutter & Dart", sub: "BLoC · Riverpod", d: 0.9, f: 0 },
+            { cls: "chip-a", icon: "{ }", title: "Flutter & Next.js", sub: "Mobile · Web · TypeScript", d: 0.9, f: 0 },
             { cls: "chip-b", icon: "₦", title: "Payments", sub: "Paystack · Flutterwave · OPay", d: 1.05, f: 1.2 },
             { cls: "chip-c", icon: "☁", title: "Google Cloud Run", sub: "NestJS · PostgreSQL", d: 1.2, f: 2.4 },
           ].map((c) => (

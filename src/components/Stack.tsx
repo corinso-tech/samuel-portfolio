@@ -6,9 +6,10 @@ import { pubspec } from "@/data/profile";
 import Reveal from "./Reveal";
 
 const groups = [
-  { title: "Mobile & web", items: ["Flutter", "Dart", "Flutter Web", "Android", "iOS", "Next.js"] },
+  { title: "Mobile", items: ["Flutter", "Dart", "Android", "iOS", "Flutter Web"] },
+  { title: "Web", items: ["Next.js", "React", "TypeScript", "Responsive UI", "SEO"] },
   { title: "Architecture & state", items: ["Clean Architecture", "BLoC / Cubit", "Riverpod", "Provider", "get_it"] },
-  { title: "Backend & cloud", items: ["Google Cloud Run", "Cloud Scheduler", "NestJS", "PostgreSQL", "Firebase", "Render"] },
+  { title: "Backend & cloud", items: ["NestJS", "TypeScript", "PostgreSQL", "REST API design", "JWT auth", "Google Cloud Run", "Cloud Scheduler", "Firebase", "Render"] },
   { title: "Payments", items: ["Paystack", "Flutterwave", "OPay", "Wallets", "Subscriptions"] },
 ];
 
@@ -37,8 +38,8 @@ export default function Stack() {
         <div>
           <Reveal className="section-head">
             <span className="eyebrow">Stack</span>
-            <h2 className="section-title">What goes in my pubspec</h2>
-            <p className="section-lede">The tools I reach for to take an app from the first screen to the store, and the backend behind it.</p>
+            <h2 className="section-title">My stack, front to back</h2>
+            <p className="section-lede">The tools I reach for across the whole product: mobile app, website, API, database and deployment.</p>
           </Reveal>
           <div className="skill-groups">
             {groups.map((g, i) => (

@@ -1,6 +1,6 @@
 # Samuel Uzoma — Portfolio
 
-Personal portfolio site for Samuel Chigemezu Uzoma, Flutter mobile & web engineer. Built with Next.js (App Router), TypeScript and Motion for animations.
+Personal portfolio site for Samuel Chigemezu Uzoma, mobile & full-stack engineer (Flutter, Next.js, NestJS). Built with Next.js (App Router), TypeScript and Motion for animations.
 
 ## Editing content
 

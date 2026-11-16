@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import Nav from "@/components/Nav";
 import Projects from "@/components/Projects";
+import Services from "@/components/Services";
 import Stack from "@/components/Stack";
 import { profile } from "@/data/profile";
 
@@ -28,7 +29,7 @@ const jsonLd = {
     { "@type": "CollegeOrUniversity", name: "Yaba College of Technology" },
   ],
   sameAs: [profile.linkedin],
-  knowsAbout: ["Flutter", "Dart", "Mobile development", "Clean Architecture", "Payments integration", "Google Cloud Run"],
+  knowsAbout: ["Flutter", "Dart", "Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "Mobile development", "Clean Architecture", "Payments integration", "Google Cloud Run"],
 };
 
 export default function Home() {
@@ -40,6 +41,7 @@ export default function Home() {
         <Hero />
         <Marquee />
         <About />
+        <Services />
         <Projects />
         <Experience />
         <Stack />

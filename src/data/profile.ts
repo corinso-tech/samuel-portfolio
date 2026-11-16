@@ -3,7 +3,7 @@
 export const profile = {
   name: "Samuel Uzoma",
   fullName: "Samuel Chigemezu Uzoma",
-  role: "Flutter Mobile & Web Engineer",
+  role: "Mobile & Full-Stack Engineer",
   location: "Lagos, Nigeria",
   email: "samueluzoma07@gmail.com",
   phone: "+234 913 231 7316",
@@ -14,7 +14,7 @@ export const profile = {
   cv: "/Samuel_Uzoma_CV.pdf",
   currentRole: "Mobile Software Engineer at Libra Motors",
   pitch:
-    "I build and ship cross-platform Flutter apps that move people, parcels and payments, and learning platforms (LMS) that take students from first lesson to final grade. Production releases to the App Store and Google Play since 2023.",
+    "I build mobile apps, websites, web apps and the backends behind them: Flutter on the phone, Next.js on the web, NestJS and PostgreSQL on the server, deployed to Google Cloud. Production releases since 2023.",
   // Words that rotate in the hero headline.
   movers: ["people", "parcels", "payments", "learning"],
 };
@@ -23,7 +23,35 @@ export const stats = [
   { value: 20, prefix: "~", suffix: "k", label: "users on the production apps I maintain" },
   { value: 2021, label: "writing Flutter & Dart since", plain: true },
   { value: 3, label: "payment gateways: Paystack, Flutterwave, OPay" },
-  { value: 20, suffix: "+", label: "ML-powered Flutter apps built and deployed" },
+  { value: 20, suffix: "+", label: "apps built and deployed across mobile, web and ML" },
+];
+
+// "What I build" — the kinds of work Samuel takes on, end to end.
+export const services = [
+  {
+    icon: "mobile" as const,
+    title: "Mobile apps",
+    text: "Cross-platform iOS and Android apps in Flutter, from first screen to App Store and Google Play release.",
+    tech: ["Flutter", "Dart", "BLoC", "Riverpod"],
+  },
+  {
+    icon: "web" as const,
+    title: "Websites & web apps",
+    text: "Fast, responsive marketing sites, dashboards and student or admin portals, built for search and every screen size.",
+    tech: ["Next.js", "React", "TypeScript"],
+  },
+  {
+    icon: "server" as const,
+    title: "Backends & APIs",
+    text: "REST APIs with authentication, payments, scheduled jobs and a well-modelled database behind them.",
+    tech: ["NestJS", "PostgreSQL", "JWT", "Paystack"],
+  },
+  {
+    icon: "cloud" as const,
+    title: "Deployment & cloud",
+    text: "Containerised deploys with separate test and live environments, plus app store releases and ongoing fixes.",
+    tech: ["Google Cloud Run", "Firebase", "Render"],
+  },
 ];
 
 export type Project = {
@@ -76,6 +104,24 @@ export const projects: Project[] = [
     link: { href: "https://apps.apple.com/us/app/libmot-express-app/id1548969326", label: "View on the App Store" },
   },
   {
+    name: "Grace Scholar Web",
+    status: "Live",
+    domain: "Next.js web platform · student, instructor & admin",
+    description:
+      "The web side of Grace Scholar: a student web app with full mobile feature parity and web subscriptions, an instructor course-authoring studio, and an internal admin console, all on one NestJS and PostgreSQL API.",
+    tags: ["Next.js", "React", "TypeScript", "NestJS", "PostgreSQL", "Cloud Run"],
+    link: { href: "https://gracescholar.corinso.com", label: "Visit gracescholar.corinso.com" },
+  },
+  {
+    name: "CORINSO website",
+    status: "Live",
+    domain: "Company website · Next.js",
+    description:
+      "Marketing website for CORINSO and its edtech arm, with responsive pages, contact flows and transactional email, deployed on Google Cloud Run.",
+    tags: ["Next.js", "TypeScript", "Cloud Run", "Resend email"],
+    link: { href: "https://corinso.com", label: "Visit corinso.com" },
+  },
+  {
     name: "BOTROCK",
     status: "Built",
     domain: "Faith & relationships · iOS & Android",
@@ -120,15 +166,17 @@ export const experience = {
 // Rendered as a pubspec.yaml. `k` = key, `c` = comment, `v` = value.
 export const pubspec: { k?: string; v?: string; c?: string; indent?: number }[] = [
   { k: "name", v: "samuel_uzoma" },
-  { k: "description", v: "Flutter mobile & web engineer, Lagos." },
+  { k: "description", v: "Mobile & full-stack engineer, Lagos." },
   {},
   { k: "environment" },
-  { k: "platforms", v: "[android, ios, web]", indent: 1 },
+  { k: "platforms", v: "[android, ios, web, server]", indent: 1 },
   {},
   { k: "dependencies" },
   { c: "# architecture & state", indent: 1 },
   { k: "architecture", v: "clean_architecture", indent: 1 },
   { k: "state", v: "[flutter_bloc, riverpod, provider]", indent: 1 },
+  { c: "# web", indent: 1 },
+  { k: "frontend", v: "[nextjs, react, typescript, responsive_ui]", indent: 1 },
   { c: "# networking", indent: 1 },
   { k: "http", v: "[dio, retrofit, chopper, http]", indent: 1 },
   { k: "auth", v: "jwt", indent: 1 },
@@ -136,7 +184,8 @@ export const pubspec: { k?: string; v?: string; c?: string; indent?: number }[] 
   { c: "# backend & cloud", indent: 1 },
   { k: "firebase", v: "[auth, firestore, cloud_storage]", indent: 1 },
   { k: "google_cloud", v: "[cloud_run, cloud_scheduler, container_deploys]", indent: 1 },
-  { k: "backend", v: "[nestjs, postgresql, render]", indent: 1 },
+  { k: "backend", v: "[nestjs, typescript, postgresql, rest_api_design]", indent: 1 },
+  { k: "hosting", v: "[cloud_run, render, test_and_live_envs]", indent: 1 },
   { c: "# money", indent: 1 },
   { k: "payments", v: "[paystack, flutterwave, opay, wallets]", indent: 1 },
   {},
@@ -147,8 +196,8 @@ export const pubspec: { k?: string; v?: string; c?: string; indent?: number }[] 
 ];
 
 export const marquee = [
-  "Flutter", "Dart", "BLoC", "Riverpod", "Clean Architecture", "Firebase", "Google Cloud Run",
-  "NestJS", "PostgreSQL", "Next.js", "Paystack", "Flutterwave", "OPay", "Dio", "Retrofit",
+  "Flutter", "Next.js", "NestJS", "TypeScript", "PostgreSQL", "React", "Dart", "BLoC", "Riverpod",
+  "Clean Architecture", "Firebase", "Google Cloud Run", "REST APIs", "Paystack", "Flutterwave", "OPay", "Dio", "Retrofit",
   "TensorFlow Lite", "FastAPI", "App Store", "Google Play",
 ];
 

@@ -30,10 +30,10 @@ export default function Contact() {
               transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
             />
             <span className="eyebrow" style={{ color: "var(--accent-2)" }}>Contact</span>
-            <h2>Have a Flutter app to build or rescue?</h2>
+            <h2>Have an app, website or backend to build?</h2>
             <p>
-              I&apos;m open to mobile and web roles, contracts and collaborations, especially products with payments,
-              bookings or learning at their core.
+              I&apos;m open to mobile, web and full-stack roles, contracts and collaborations, from a single landing page to a
+              complete product with payments, bookings or learning at its core.
             </p>
             <div className="contact-rows">
               <div className="contact-row">

@@ -30,9 +30,9 @@ export default function About() {
         <div className="about-grid">
           <Reveal>
             <p className="about-text">
-              Writing Flutter and Dart since 2021. Today I maintain the booking and logistics apps behind <em>Libmot</em>,
+              Building software since 2021, on the phone, in the browser and on the server. Today I maintain the booking and logistics apps behind <em>Libmot</em>,
               used by roughly 20,000 people, and I&apos;m building <em>Grace Scholar</em>, a full learning management
-              system, end to end: Flutter app, web apps and a NestJS backend on Google Cloud.
+              system, end to end: Flutter app, Next.js web apps, and a NestJS and PostgreSQL backend on Google Cloud.
             </p>
           </Reveal>
           <div className="stats">

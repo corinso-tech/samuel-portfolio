@@ -67,7 +67,7 @@ export default function Projects() {
         >
           <span className="eyebrow">Selected work</span>
           <h2 className="section-title">Apps in production, and the ones on the way</h2>
-          <p className="section-lede">From transport and logistics to a full learning platform, each one built with Flutter and shipped to real users.</p>
+          <p className="section-lede">Mobile apps, web platforms and the APIs behind them, from transport and logistics to a full learning platform, shipped to real users.</p>
         </motion.div>
 
         <div className="projects">
